@@ -11,4 +11,4 @@ class Solution:
         if not num_str:
             return target == added + cached_sum
         num = int(num_str[0])
-        return self.punishment(added,cached_sum*10+num,num_str[1:], target) or self.punishment(added+num,cached_sum,num_str[1:], target)
+        return self.punishment(added,cached_sum*10+num,num_str[1:], target) or self.punishment(added+cached_sum,num,num_str[1:], target)
