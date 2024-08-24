@@ -4,7 +4,7 @@ from itertools import combinations
 class Solution:
     def punishmentNumber(self, n: int) -> int:
         punishment = 0
-        for i in range(10, 11):
+        for i in range(n):
             punishment += self.punishment(0, str(i * i), i)
         return punishment
 
